@@ -1,0 +1,23 @@
+<!--addacc/addacc.wxml-->
+<view class='section'>
+  <view class='section_title'>编辑您的纪意账目</view>
+  <picker mode='date' value="{{date}}" start="2018-01-01" end="2022-12-31" bindchange="bindDateChange">
+    <view class="picker">
+      选择日期: {{date}}
+    </view>
+  </picker>
+</view>
+
+<view class='inputthing'>
+  <input placeholder='输入事项' value='{{thing}}' maxlength='20' bindblur='okthing' auto-focus />
+</view>
+
+<view class='inputmoney'>
+  <input placeholder='输入金额 正数收入 负数支出' value='{{money}}' maxlength='10' bindblur='okmoney' />
+</view>
+
+<view class='btn'>
+  <button style="background-color:#D7907B;margin:10rpx" bindtap="okbtn">完成</button>
+  <button style="background-color:#D7907B;margin:10rpx" bindtap="cancelbtn">退出</button>
+  
+</view>

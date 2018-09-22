@@ -1,0 +1,14 @@
+/* add/add.wxss */
+.title{
+  background-color: #ECC8AE;
+  height: 100rpx;
+  text-align: center;
+}
+
+.text{
+  background-color: #D7907B;
+  height: 800rpx;
+  width: 750rpx;
+  border: solid 5px white;
+}
+

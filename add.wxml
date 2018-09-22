@@ -1,0 +1,18 @@
+<!--add/add.wxml-->
+<view class='title' bindtap='isfouce'>点击开始纪意之旅</view> 
+
+
+<view wx:if="{{!hiddenmodalput}}" title="" class='textareaModal'>
+    <view class='shadow' bindtap="cancel"></view>
+    <view>
+      <form>
+         <textarea class='text' maxlength='500' disabled='{{disable}}' placeholder='从这里开始纪意' value='{{textareaVal}}' fixed='true' bindblur='textarea'></textarea> 
+        <text bindtap='inputcomplete'>请点击我确定 \t一旦确定现在无法更改!</text>
+        <view wx:if="{{confirm}}" class='modalBtn clearfix'>        
+          <button formType="submit" size="mini" style="background-color:#D7907B;margin:20rpx" bindtap="okbtn">完成</button>
+          <button size="mini" style="background-color:#D7907B;margin:20rpx" bindtap="cancelbtn">取消</button>
+
+        </view>
+      </form>
+    </view>
+</view>

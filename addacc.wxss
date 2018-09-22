@@ -1,0 +1,25 @@
+/* addacc/addacc.wxss */
+.section_title{
+  height: 100rpx
+}
+
+.picker{
+    padding: 15px;
+    height: 100rpx;
+    background-color: #ECC8AE;
+    border: solid 5px white;
+}
+
+.inputthing{
+  padding: 15px;
+  height: 130rpx;
+    background-color: #ECC8AE;
+    border: solid 5px white;
+}
+
+.inputmoney{
+  padding: 15px;
+  height: 130rpx;
+    background-color: #ECC8AE;
+    border: solid 5px white;
+}

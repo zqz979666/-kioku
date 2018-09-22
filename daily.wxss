@@ -1,0 +1,23 @@
+/* daily/daily.wxss */
+.picker{
+    padding: 15px;
+    background-color: #ECC8AE;
+}
+
+.textpart{
+  width: 750rpx;
+  height: 1300rpx;
+  text-align: center;
+  line-height: 60rpx;
+  background-color: #ECC8AE;
+}
+
+.findbutton{
+  height: 120rpx;
+}
+
+.addd{
+
+  bottom: -100px;
+
+}

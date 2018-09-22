@@ -1,0 +1,14 @@
+<!--logs.wxml-->
+
+
+<view class="themes-list">
+  <view class="themes-list-box" wx:for="{{datalists}}" wx:key='id'>
+    <view class="themes-list-main">
+      <view class="themes-list-name" data-id="{{item.id}}" bindtap='tapevent' bindlongpress='deltap'>{{item.content}}</view>
+    </view>
+  </view>
+</view>
+
+<view bindtap='add'>
+      <image class="add_icon" src="../../images/add.png"></image>
+  </view>

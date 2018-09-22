@@ -1,0 +1,27 @@
+<!--daily/daily.wxml-->
+<view class='section'>
+  <view class='section_title'>回溯  \t\t\t\t寻找往昔的纪意</view>
+  <picker mode='date' value="{{date}}" start="2018-01-01" end="2022-12-31" bindchange="bindDateChange">
+    <view class="picker">
+      选择日期: {{date}}
+    </view>
+  </picker>
+</view>
+<view class="findbutton">
+  <button style="background-color:#D7907B;margin:20rpx" bindtap="changedate">时光回溯</button>
+</view>
+
+<view class="textpart">
+  
+  <block wx:if="{{diarytype == 0}}">
+    <view> 今天您还没有任何日记哦！ </view>
+    <button class='addd' style="background-color:#D7907B;margin:10rpx" bindtap="adddiary">添加日记</button>
+
+  </block>
+
+  <block wx:if="{{diarytype == 1}}">
+    <view> {{diary}} </view>
+    <button size="mini" style="background-color:#D7907B;margin:10rpx" bindtap="updatediary">修改日记</button>
+    <button size="mini" style="background-color:#D7907B;margin:10rpx" bindtap="deldiary">删除日记</button>
+  </block>
+</view>
