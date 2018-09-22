@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "daily/daily",
+    "add/add",
+    "addacc/addacc"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#ECC8AE",
+    "navigationBarTitleText": "纪意kioku",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "backgroundColor": "#ECC8AE",
+    "color": "#fff",
+    "list": [
+      {
+        "iconPath": "images/house.png",
+        "selectedIconPath": "images/housesel.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "images/pen.png",
+        "selectedIconPath": "images/pensel.png",
+        "pagePath": "daily/daily",
+        "text": "日记"
+      },
+      {
+        "iconPath": "images/book.png",
+        "selectedIconPath": "images/booksel.png",
+        "pagePath": "pages/logs/logs",
+        "text": "账本"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}
